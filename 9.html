@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+<script src="jquery-3.2.1.min.js" type="text/javascript"></script>
+</head>
+<body>
+<script>
+var doShma=function() {
+	alert ("Shma, Israel....");
+};
+
+var timeoutId = setTimeout(doShma,6000);
+
+var intUpt = prompt("Break it?","yes");
+if (intUpt == "yes") {
+	clearTimeout(timeoutId);
+	alert("kvar");
+} else {alert("daka!");
+
+};
+</script>	
+</body>
+</html>
+
+	<form class="form">
+			<h3>REQUEST A QUOTE</h3> <br>
+    <input type="text" name="fullname" placeholder="Full Name"><br>
+    <input type="email" name="email" placeholder="Email Adress"><br>
+    <input type="phone" name="phone" placeholder="Phone number"><br>
+    <input type="text" name="country" placeholder="Country"><br>
+     <input type="checkbox" name="Accept" placeholder="Accept"> I accept the terms and conditions <br>
+    <input class="submit" type="submit" value="SEND">
+</form>
